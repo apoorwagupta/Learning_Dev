@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+html,
+body {
+    background: url('vidgame.jpg') no-repeat center center fixed;
+    font-family: "Press Start 2P", sans-serif;
+    background-size: 100%;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#heading {
+    background-color: rgb(9, 9, 9);
+    border: 4px solid rgb(252, 247, 100);
+    border-radius: 30px;
+    padding: 25px 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.wrapper-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150%;
+    flex-direction: column;
+    /* animation: fadeIn 3s ease-in 1s; */
+}
+
+.wrapper {
+    color: rgb(254, 253, 253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    font-size: 48px;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.rpsButton {
+    background-color: rgb(15, 98, 113);
+    height: 100px;
+    width: 150px;
+    font-size: 48px;
+    border-radius: 40px;
+    border-color: #010818;
+    border-width: 4px;
+    cursor: pointer;
+}
+
+.rpsButton:hover {
+    background-color: #2d80e0;
+    border-width: 4px;
+    border-color: #f8a0e5;
+}
+
+
+#end-game-button-div {
+    margin: 20px auto 0px;
+    /* border: 2px solid yellow; */
+}
+
+#endGameButton {
+    background-color: rgb(186, 245, 38);
+    color: #080707;
+    font-size: 2rem;
+    margin: auto;
+    font-family: "Press Start 2P", sans-serif;
+    padding: 2rem 2rem;
+    cursor: pointer;
+    border-width: 4px;
+    border-color: #6fd195;
+    border-radius: 40px;
+    width: auto;
+    height: 100px;
+}
+
+#endGameButton:hover {
+    background-color: #ff5d5d;
+    border-width: 4px;
+    border-color: #d16fbb;
+    transition: all 0.3s ease;
+}
+
+#endGameButton:hover:after {
+    background-color: rgb(184, 184, 184);
+    border-radius: 30px;
+
+    border: 4px solid #222;
+}
+
+#endGameButton:active:after {
+    background-color: rgb(184, 184, 184);
+    border-radius: 30px;
+    border-radius: 30px;
+    border: 2px solid #222;
+}
+
+#endGameButton:active {
+    background-color: #ba4646;
+    border-width: 4px;
+    border-color: #f2a1e0;
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    transition: all 0.3s ease;
+}
+
+.resultContainer {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+}
