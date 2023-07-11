@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+
+body {
+    padding-top: 50px;
+    font-family: "Nanum Gothic", sans-serif;
+    background:url(smap-weather.jpg) no-repeat;
+   
+}
+#city-input,
+#weather-output {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.banner {
+    color: #FFD23F;
+    font-family: sans-serif;
+}
+

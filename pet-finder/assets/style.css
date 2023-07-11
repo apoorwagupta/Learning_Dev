@@ -1,0 +1,388 @@
+/* For Sticky footer */
+/* https://css-tricks.com/couple-takes-sticky-footer/ */
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
+html,
+body {
+  height: 100%;
+    background: url(pet2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+div.content {
+  flex: 1 0 auto;
+}
+
+
+p.welcome {
+  font-size: 2rem;
+  margin-top: 20px;
+  font-family: "Quicksand";
+}
+
+h1 {
+  font-size: 5em;
+  font: bold 10vw/1 'Signika', sans-serif;
+  user-select: none;
+  text-align: center;
+}
+
+h1 span {
+  display: inline-block;
+  animation: float .2s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: none;
+  }
+
+  33% {
+    transform: translateY(-1px) rotate(-2deg);
+  }
+
+  66% {
+    transform: translateY(1px) rotate(2deg);
+  }
+}
+
+body:hover span {
+  animation: bounce .6s;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: rotateX(20deg) translateY(2px) rotate(-3deg);
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(3deg) scale(1.1);
+  }
+}
+
+span:nth-child(4n) {
+  color: hsl(50, 75%, 55%);
+  text-shadow: 1px 1px hsl(50, 75%, 45%), 2px 2px hsl(50, 45%, 45%), 3px 3px hsl(50, 45%, 45%), 4px 4px hsl(50, 75%, 45%);
+}
+
+span:nth-child(4n-1) {
+  color: hsl(135, 35%, 55%);
+  text-shadow: 1px 1px hsl(135, 35%, 45%), 2px 2px hsl(135, 35%, 45%), 3px 3px hsl(135, 35%, 45%), 4px 4px hsl(135, 35%, 45%);
+}
+
+span:nth-child(4n-2) {
+  color: hsl(155, 35%, 60%);
+  text-shadow: 1px 1px hsl(155, 25%, 50%), 2px 2px hsl(155, 25%, 50%), 3px 3px hsl(155, 25%, 50%), 4px 4px hsl(140, 25%, 50%);
+}
+
+span:nth-child(4n-3) {
+  color: hsl(30, 65%, 60%);
+  text-shadow: 1px 1px hsl(30, 45%, 50%), 2px 2px hsl(30, 45%, 50%), 3px 3px hsl(30, 45%, 50%), 4px 4px hsl(30, 45%, 50%);
+}
+
+h1 span:nth-child(2) {
+  animation-delay: .05s;
+}
+
+h1 span:nth-child(3) {
+  animation-delay: .1s;
+}
+
+h1 span:nth-child(4) {
+  animation-delay: .15s;
+}
+
+h1 span:nth-child(5) {
+  animation-delay: .2s;
+}
+
+h1 span:nth-child(6) {
+  animation-delay: .25s;
+}
+
+h1 span:nth-child(7) {
+  animation-delay: .3s;
+}
+
+h1 span:nth-child(8) {
+  animation-delay: .35s;
+}
+
+h1 span:nth-child(9) {
+  animation-delay: .4s;
+}
+
+h1 span:nth-child(10) {
+  animation-delay: .45s;
+}
+
+h1 span:nth-child(11) {
+  animation-delay: .5s;
+}
+
+h1 span:nth-child(12) {
+  animation-delay: .55s;
+}
+
+h1 span:nth-child(13) {
+  animation-delay: .6s;
+}
+
+h1 span:nth-child(14) {
+  animation-delay: .65s;
+}
+
+
+/* nav stylings */
+nav {
+  font-family: "Quicksand";
+  font-weight: 600;
+  line-height: 2.5rem;
+  padding-top: 1.25rem;
+  margin-bottom: 0rem;
+  height: 75px;
+  background-color: #ff1177;
+}
+
+/* nav bar adults only petfinder logo */
+a.brand-logo {
+  font-weight: 400;
+  
+  font-kerning: 2;
+  font-family: "Signika";
+}
+
+/* underage nav */
+div.underage {
+  display: flex;
+  justify-content: center;
+}
+
+/* search page nav */
+div.search-nav {
+  padding-left: 3rem;
+}
+
+
+/* intro subtitle */
+h5.subtitle {
+  font-family: "Quicksand";
+  color: rgb(190, 97, 11);
+  font-weight: 600;
+  text-align: center;
+  /* margin-top: 1px; */
+}
+
+/* intro card titles */
+h5.title {
+  padding-bottom: 5rem;
+}
+
+/* flexing */
+div.container-age {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+/* intro card formatting */
+div.cardcontent-age,
+div.cardcontent-animal {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  width: auto;
+}
+
+/* intro page/index.html animal card */
+div.cardcontent-animal {
+  order: 2;
+}
+
+/* intro page/index.html age card */
+div.cardcontent-age {
+  order: 1;
+}
+
+/* Under18.html styling*/
+div.underage {
+  text-align: center;
+}
+
+/* embedded video stylings /courtesy of/ https://embedresponsively.com/ */
+div.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* under18.html link buttons */
+.underage-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.btn-large {
+  width: fit-content;
+  height: auto !important;
+  font-weight: 600;
+  font-size: large;
+  line-height: normal;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: rgb(190, 97, 11);
+}
+
+.btn {
+  font-weight: 600;
+  font-size: large;
+  background-color: rgb(190, 97, 11);
+}
+
+/* index.html age and animal yes button style */
+.age-yes,
+.animal-yes {
+  margin-right: 1.5rem;
+}
+
+/* yes or no buttons selected on index.html page */
+button:focus {
+  background-color: #4DB6AC
+}
+
+/* card styling */
+.card {
+  color: white;
+  background-color: rgb(134, 208, 229);
+  border-radius: 30px;
+}
+
+/* to hide search container*/
+#searchcontainer {
+  color: #ffffff;
+  display: block;
+}
+
+/* pet results card styling */
+/* to hide result container */
+#result {
+  display: block;
+}
+
+/* name of pet */
+#name-text {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* pet image size */
+#pet-image {
+  max-width: 500px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+/* pet result title font displays */
+.resultDisplay {
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* pet result response display */
+#breed-text,
+#house-trained-text,
+#mood-text {
+  line-height: 30px;
+  font-size: 20px;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* link to petfinder "Meet Me!" */
+#petfinder-link {
+  text-align: center;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ff1177;
+  font-size: 30px;
+}
+
+/* end pet results card styling */
+
+footer.page-footer {
+  flex-shrink: 0;
+}
+
+/* responsive stylings */
+@media (max-width: 600px) {
+  nav {
+    height: 100px;
+    text-align: center;
+  }
+
+  p.title {
+    font-size: 2rem;
+  }
+
+  div.card-age,
+  div.card-animal {
+    margin-right: 0rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  p.welcome {
+    font-size: 2rem;
+  }
+
+  p.title {
+    font-size: 3rem;
+  }
+
+  div.container-age {
+    flex-wrap: wrap;
+  }
+}
+
