@@ -11,7 +11,8 @@ let interval;
 
 btnStart.addEventListener('click', () => {
     clearInterval(interval);
-    inverval = setInterval(startTimer, 10);
+    inverval = setInterval(startTimer, 10); //it triggers the startTimer function which increments the time every 10 milliseconds. 
+    // The time is divided into minutes, seconds, and tens (which represent the hundredths of a second).
 })
 btnStop.addEventListener('click', () => {
     clearInterval(inverval);
